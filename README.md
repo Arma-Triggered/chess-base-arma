@@ -1,6 +1,13 @@
 # chess-base-arma
 Base project for a chess like game in Arma, that will make the confrontations into real life action controlled by players. 
 
+## Configuration
+### Mission Parameters
+#### Battlefield Grid Size (battlefield_grid_size) 
+The map will be divided into equal grids. Depending on how much area you want to have available in battles,
+you can change this value to a higher/lower value. 
+Bigger value = Longer session 
+
 ## Roadmap
 
 ### Phase 1

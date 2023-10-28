@@ -1,0 +1,20 @@
+class CfgFunctions {
+    class A3C {
+        tag = "A3C";
+        class Map {
+            class drawGridsOnMap {};
+            class drawLineOnMap {};
+        };
+    }
+}
+
+class Params
+{
+	class BattlefieldGridSize
+	{
+		title = "Battlefield Grid Size (in meters)";
+		texts[] = { "500m", "1000m", "2000m" };
+		values[] = { 500, 1000, 2000 };
+		default = 500;
+	};
+};
