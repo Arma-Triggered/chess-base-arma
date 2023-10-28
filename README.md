@@ -3,7 +3,7 @@ Base project for a chess like game in Arma, that will make the confrontations in
 
 ## Configuration
 ### Mission Parameters
-#### Battlefield Grid Size (battlefield_grid_size) 
+#### Battlefield Grid Size (BattlefieldGridSize) 
 The map will be divided into equal grids. Depending on how much area you want to have available in battles,
 you can change this value to a higher/lower value. 
 Bigger value = Longer session 
