@@ -1,6 +1,7 @@
-_battleFieldGridSize=["battlefield_grid_size", 500] call BIS_fnc_getParamValue;
+params ["_player"];
+
+_battleFieldGridSize="battlefield_grid_size" call BIS_fnc_getParamValue;
 _gridColorBlack = [0,1,0,1];
-_player = param[0];
 _gridsEnabled = _player getVariable ["grids_enabled", false];
 
 if (!_gridsEnabled) then {
