@@ -1,3 +1,3 @@
 params ["_player", "_didJIP"];
 
-call A3C_fnc_drawGridsOnMap;
+_player addAction ["Toggle Map Grids", "functions\Map\fn_toggleGridsOnMap.sqf", _player];

@@ -11,7 +11,7 @@ class CfgFunctions {
     class A3C {
         tag = "A3C";
         class Map {
-            class drawGridsOnMap {};
+            class toggleGridsOnMap {};
             class drawLineOnMap {};
         };
     }
