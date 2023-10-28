@@ -5,7 +5,7 @@ _amountOfCombatLifeSaver = 2;
 _amountOfEngineers = 2;
 _amountOfAutoRifleman = 2;
 
-private["_squadLeaderName", "_combatLifeSaverName", "_autoRiflemanName", "_engineerName"];
+private ["_squadLeaderName", "_combatLifeSaverName", "_autoRiflemanName", "_engineerName"];
 
 switch (_side) do {
     case west: {
@@ -30,7 +30,7 @@ switch (_side) do {
 };
 
 _group = createGroup _side;
-_skill = 0.5;
+_skill= "SkillAi" call BIS_fnc_getParamValue;
 
 for "_" from 1 to _amountOfSquadLeaders do {
     _squadLeaderName createUnit [_position, _group, "", _skill, "SERGEANT"];

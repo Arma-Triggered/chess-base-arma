@@ -1,29 +1,11 @@
-author			= "Flanders, HungryDev";
-onLoadName		= "Arma Chess";
-onLoadMission	= "Arma Chess";
+#include "functions\functions.hpp"
+#include "resources\configurations\params.hpp"
+
+author = "Flanders, HungryDev";
+onLoadName = "Arma Chess";
+onLoadMission = "Arma Chess";
 briefingName = "Arma Chess";
 
 enableDebugConsole[] = { "76561198034522521", "76561198236572918" };
 
-DisabledAI = 1;
-
-class CfgFunctions {
-    class A3C {
-        tag = "A3C";
-        class Map {
-            class toggleGridsOnMap {};
-            class drawLineOnMap {};
-        };
-    }
-}
-
-class Params
-{
-	class BattlefieldGridSize
-	{
-		title = "Battlefield Grid Size (in meters)";
-		texts[] = { "500m", "1000m", "2000m" };
-		values[] = { 500, 1000, 2000 };
-		default = 500;
-	};
-};
+disabledAI = 1;
