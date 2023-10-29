@@ -89,7 +89,6 @@ params[
 ];
 
 _pos = _pos call BIS_fnc_position;
-hint str _pos;
 if ( _pos in [ [0,0,0], [] ] ) exitWith { "Creating Sector error: Bad position" call BIS_fnc_error };
 
 if ( _defaultOwner isEqualType sideUnknown ) then {

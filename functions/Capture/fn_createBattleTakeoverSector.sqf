@@ -25,11 +25,11 @@ if (_capturingCooficient == 0) then {
    "Capture or kill within time",
    "Capture the objective or kill complete enemy squads before the time runs out",
    0,
-   0,
-   0,
-   0,
-   0,
-   0,
+   1,
+   1,
+   1,
+   1,
+   1,
    1,
    _capturingCooficient
   ] call A3C_fnc_createSector;
