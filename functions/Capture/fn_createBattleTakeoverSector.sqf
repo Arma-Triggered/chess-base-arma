@@ -5,7 +5,7 @@ _battleFieldGridSizeDividor = "CapturingBattlefieldGridSizeDivisorForRadius" cal
 _capturingCooficient = "CapturingSpeedCooficient" call BIS_fnc_getParamValue;
 
 [
-   _centerPos,
+   _pos,
    format[ "Capture or kill enemies" ],
    "",
    [ _battleFieldGridSize / _battleFieldGridSizeDividor, _battleFieldGridSize / _battleFieldGridSizeDividor, 0, false ],
@@ -22,11 +22,11 @@ _capturingCooficient = "CapturingSpeedCooficient" call BIS_fnc_getParamValue;
    "Capture or kill within time",
    "Capture the objective or kill complete enemy squads before the time runs out",
    0,
-   1,
-   1,
-   1,
-   1,
-   1,
+   0,
+   0,
+   0,
+   0,
+   0,
    1,
    _capturingCooficient
   ] call A3C_fnc_createSector;
