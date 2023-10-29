@@ -39,28 +39,25 @@ Slower capture speed, means it is harder to take over the capture point.
 
 #### Game
 
-- [ ] Function for spawning a single resource, at middle of the square
-- [ ] Runnable for killing players going out of the battlefield
 - [ ] Runnable for timer to conquer objective or eliminate enemy
-- [x] Objective capturing
+- [ ] Runnable for killing players going out of the battlefield
 - [ ] Battlewin check on player kill
 - [ ] Function for calling Battlewin
-- [ ] Function for teleporting players to pawn
 - [ ] Function for teleport players to briefing room
-- [ ] Function for starting battle (arg attacker box and another arg defending box with all resources in battle per side)
+- [x] Function for spawning a single resource, at middle of the square
+- [x] Objective capturing
+- [x] Function for teleporting players to pawn
+- [x] Function for starting battle (arg attacker box and another arg defending box with all resources in battle per side)
 
 ### Phase 2
+**Create tickets on GitHub**
 
-#### Map
-- [ ] REST Client in arma component for sending moves to backend and polling updates
-
-#### Game
+Implement map logic in Spring boot app, visualize and allow controls through some frontend (preferably flutter app + web).
 
 ### Phase 3
+**Create tickets on GitHub**
 
-#### Map
-
-#### Game
+?
 
 ## Credits
 - [Larrow](https://github.com/LarrowZurb) | Sector script

@@ -3,6 +3,7 @@ class CfgFunctions {
         tag = "A3C";
         class Battle {
             class startBattle {};
+            class focusMapOnBattlefield {};
         };
         class Capture {
             class createBattleTakeoverSector {};

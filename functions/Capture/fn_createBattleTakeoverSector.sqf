@@ -3,6 +3,9 @@ params ["_pos", "_attackingSide", "_defendingSide"];
 _battleFieldGridSize = "BattlefieldGridSize" call BIS_fnc_getParamValue;
 _battleFieldGridSizeDividor = "CapturingBattlefieldGridSizeDivisorForRadius" call BIS_fnc_getParamValue;
 _capturingCooficient = "CapturingSpeedCooficient" call BIS_fnc_getParamValue;
+if (_capturingCooficient == 0) then {
+    _capturingCooficient = 0.05;
+};
 
 [
    _pos,
