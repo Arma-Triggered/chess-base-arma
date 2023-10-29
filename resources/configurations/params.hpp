@@ -16,7 +16,7 @@ class Params
 	};
 	class CapturingSpeedCooficient
 	{
-		title = "Capture speed cooficient (longer capture times = harder)";
+		title = "Capture speed (Slower capture speed = harder)";
     		texts[] = { "Very fast", "Fast", "Normal", "Slow", "Very slow" };
     		values[] = { 0.075, 0.05, 0.025, 0.01, 0.0025 };
     		default = 0.025;
