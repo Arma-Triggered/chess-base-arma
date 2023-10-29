@@ -1,4 +1,4 @@
-# chess-base-arma
+# Arma Chess Base functionality (chess-base-arma)
 Base project for a chess like game in Arma, that will make the confrontations into real life action controlled by players. 
 
 ## Configuration
@@ -50,4 +50,7 @@ Bigger value = Longer session
 #### Map
 
 #### Game
+
+## Credits
+- [Larrow](https://github.com/LarrowZurb) | Sector script
 
