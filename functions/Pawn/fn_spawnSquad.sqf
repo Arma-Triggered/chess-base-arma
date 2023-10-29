@@ -26,7 +26,11 @@ switch (_side) do {
         _autoRiflemanName = EastCsatAutoRifleman;
         _engineerName = EastCsatEngineer;
     };
-	default {};
+    default {
+        _errorMsg = format["Unsupported side: %1", _side];
+        _errorMsg call BIS_fnc_error;
+        exit;
+    };
 };
 
 _group = createGroup _side;
@@ -47,3 +51,5 @@ for "_" from 1 to _amountOfAutoRifleman do {
 for "_" from 1 to _amountOfEngineers do {
     _engineerName createUnit [_position, _group, "", _skill, "CORPORAL"];
 };
+
+_group;
