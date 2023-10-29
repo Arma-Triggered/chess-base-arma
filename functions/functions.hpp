@@ -10,6 +10,9 @@ class CfgFunctions {
         };
         class Library {
             class createSector {};
+        class Grid {
+            class calculateCenterPosByGridLatLon {};
+            class truncateLatLonToGridLatLon {};
         };
         class Map {
             class toggleGridsOnMap {};
