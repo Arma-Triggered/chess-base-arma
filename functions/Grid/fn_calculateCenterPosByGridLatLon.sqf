@@ -1,4 +1,4 @@
-params ["_lat, _lon"];
+params ["_lat", "_lon"];
 
 _battleFieldGridSize = "BattlefieldGridSize" call BIS_fnc_getParamValue;
 
