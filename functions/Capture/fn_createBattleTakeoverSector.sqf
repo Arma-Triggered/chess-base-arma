@@ -7,23 +7,26 @@ if (_capturingCooficient == 0) then {
     _capturingCooficient = 0.05;
 };
 
+_sectorArea = [ _battleFieldGridSize / _battleFieldGridSizeDividor, _battleFieldGridSize / _battleFieldGridSizeDividor, 0, false ];
+_sides = [ _attackingSide, _defendingSide ];
+_onChangeOwner = format["params[ '_sector', '_owner', '_oldOwner' ]; [_sector, _owner, _oldOwner, %1] call A3C_fnc_endBattle;", _attackingSide];
+_scoreReward = 0;
+_taskOwner = 3;
+_title = "Capture or kill within time";
+_description = "Capture the objective or kill complete enemy squads before the time runs out";
+
 [
    _pos,
    format[ "Capture or kill enemies" ],
    "",
-   [ _battleFieldGridSize / _battleFieldGridSizeDividor, _battleFieldGridSize / _battleFieldGridSizeDividor, 0, false ],
-   [ _attackingSide, _defendingSide ],
+   _sectorArea,
+   _sides,
    _defendingSide,
-   ["
-       params[ '_sector', '_owner', '_oldOwner' ];
-       if (_owner == ", _attackingSide ,") then {
-         deleteVehicle _sector;
-       };
-      "] joinString "",
-   0,
-   3,
-   "Capture or kill within time",
-   "Capture the objective or kill complete enemy squads before the time runs out",
+   _onChangeOwner,
+   _scoreReward,
+   _taskOwner,
+   _title,
+   _description,
    0,
    1,
    1,

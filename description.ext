@@ -8,4 +8,16 @@ briefingName = "Arma Chess";
 
 enableDebugConsole[] = { "76561198034522521", "76561198236572918" };
 
+respawn = "BASE";
+respawnOnStart = 1;
+respawnDelay = 10;
+respawnTemplates[] = { "MenuPosition" };
+
 disabledAI = 1;
+
+class Header
+{
+	gameType = "CTI";
+	minPlayers =  2;
+	maxPlayers = 20;
+};

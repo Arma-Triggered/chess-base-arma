@@ -4,6 +4,7 @@ class CfgFunctions {
         class Battle {
             class startBattle {};
             class focusMapOnBattlefield {};
+            class endBattle {};
         };
         class Capture {
             class createBattleTakeoverSector {};
